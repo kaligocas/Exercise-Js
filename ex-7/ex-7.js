@@ -1,0 +1,12 @@
+/*Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a*/
+
+let frase = prompt("Introduce una frase");
+let letra = prompt("Introduce una letra");
+let contador = 0;
+
+for (let i = 0; i < frase.length; i++) {
+    if (frase[i] === letra) {
+        contador++;
+    }
+}
+document.write("La letra " + letra + " aparece " + contador + " veces en la frase: " + frase);
